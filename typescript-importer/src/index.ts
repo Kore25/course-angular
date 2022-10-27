@@ -1,5 +1,5 @@
 import { Xmen } from './classes/xmen.class';
 
-const wolverine = new Xmen('logan', 'wolvorine');
+const wolverine = new Xmen('logan', 'wolverin');
 
-wolverine.imprimir();
+// wolverine.imprimir();

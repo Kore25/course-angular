@@ -1,3 +1,9 @@
+function imprimirConsola(constructorClase: Function ) {
+  console.log(constructorClase);  
+};
+
+
+@imprimirConsola
 export class Xmen {
     constructor(
         public nombre: string,
