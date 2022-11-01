@@ -20,9 +20,14 @@
             <a class="nav-link" [routerLink]="['about']">About</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Buscar Heroe" (keyup.enter)="buscarHeroe(buscartexto.value)" #buscartexto>
+          <button
+            (click)="buscarHeroe(buscartexto.value)"
+            class="btn btn-outline-primary" 
+            type="button">
+              Buscar
+          </button>
         </form>
       </div>
     </div>
